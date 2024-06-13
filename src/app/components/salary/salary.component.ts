@@ -3,11 +3,20 @@ import { SalaryService } from '../../services/salary.service';
 
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-salary',
   standalone: true,
-  imports: [MatTableModule, MatPaginatorModule],
+  imports: [
+    MatTableModule,
+    MatPaginatorModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule,
+  ],
   templateUrl: './salary.component.html',
   styleUrl: './salary.component.css',
 })

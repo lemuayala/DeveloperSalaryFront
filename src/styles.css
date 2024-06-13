@@ -1,7 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importación del tema de Angular Material */
+@import "../node_modules/@angular/material/prebuilt-themes/cyan-orange.css";
 
-/* Opcional: Importar los estilos de íconos de Material */
-@import "../node_modules/@angular/material/prebuilt-themes/azure-blue.css";
+/* Importación de Bootstrap */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Estilos globales */
+body {
+  background-color: #1d2225;
+  color: #e0e0e0;
+}
+
+.mat-card {
+  background-color: #1d2225 !important;
+  color: #e0e0e0 !important;
+}
