@@ -30,7 +30,6 @@ export class SalaryComponent implements AfterViewInit {
   getSalaries() {
     this.salaryService.getSalaries().subscribe(
       (r) => {
-        console.log(r);
         this.dataSource.data = r.data;
       },
       (error) => {
